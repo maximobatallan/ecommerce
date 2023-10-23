@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['ecommerce-production-66e3.up.railway.app']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
