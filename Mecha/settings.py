@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['ecommerce-production-66e3.up.railway.app']
 
-
+CSRF_COOKIE_SECURE = False
 
 # Application definition
 
