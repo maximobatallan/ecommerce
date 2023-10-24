@@ -133,8 +133,6 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / "tasks" / "static" / "media"
 
 LOGIN_URL = '/signin/'
 
