@@ -40,4 +40,6 @@ urlpatterns = [
     path('productdetails/<int:producto_id>/', views.detalleproducto, name='PD'),
     path('cart/', views.cart, name='cart'),
     ]
-
+if settings.DEBUG:
+    # Configura la URL para servir archivos estáticos durante el desarrollo.
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
