@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "tasks" / "static" / "media"
-
+print(MEDIA_URL)
 LOGIN_URL = '/signin/'
 
 # Default primary key field type
