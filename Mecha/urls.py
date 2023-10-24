@@ -15,10 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 from tasks import views
-from django.conf import settings
-from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -42,6 +41,3 @@ urlpatterns = [
     path('productdetails/<int:producto_id>/', views.detalleproducto, name='PD'),
     path('cart/', views.cart, name='cart'),
     ]
-if settings.DEBUG:
-    # Configura la URL para servir archivos estáticos durante el desarrollo.
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
